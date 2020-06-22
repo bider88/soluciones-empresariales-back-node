@@ -16,4 +16,4 @@ const urlDB = process.env.NODE_ENV === 'dev' ? 'mongodb://localhost:27017/soluci
 process.env.URLDB = urlDB;
 
 // origin
-process.env.ORIGIN = process.env.NODE_ENV === 'dev' ? 'http://localhost:4200' : process.env.ORIGIN_URL;
+process.env.ORIGIN = process.env.NODE_ENV === 'dev' ? '*' : process.env.ORIGIN_URL;
