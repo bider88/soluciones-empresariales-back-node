@@ -1,7 +1,7 @@
-const handleError = (res, code, err) => {
+const handleError = (res, code, error) => {
   return res.status(code).json({
       ok:false,
-      err
+      error
   })
 }
 

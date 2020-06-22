@@ -17,11 +17,11 @@ router.post('/login', (req, res) => {
         }
 
         if (!userDB) {
-            return handleError(res, 400, { message: 'Email or password are invalid' });
+            return handleError( res, 401, 'Email or password are invalid' );
         }
 
         if (!bcrypt.compareSync(body.password, userDB.password)) {
-            return handleError(res, 400, { message: 'Email or password are invalid' });
+            return handleError( res, 401, 'Email or password are invalid' );
         }
 
         const token = createToken(userDB);
