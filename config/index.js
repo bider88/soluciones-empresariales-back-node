@@ -11,7 +11,7 @@ process.env.EXP_TOKEN = '2d';
 process.env.SEED = process.env.SEED || 'seed-dev';
 
 // Database
-const urlDB = process.env.NODE_ENV === 'dev' ? 'mongodb://localhost:27017/soluciones_empresariales' : process.env.MONGO_URI;
+const urlDB = process.env.NODE_ENV === 'dev' ? 'mongodb://localhost:27017/soluciones_empresariales' : process.env.MONGODB_URI;
 
 process.env.URLDB = urlDB;
 
